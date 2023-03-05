@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav a{
+    text-decoration: none;
+
+}
+nav{
+    z-index: 999;
+    padding: 14px;
+    /* background-color: red; */
+}
+nav div.icon-father{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+}
+nav i.bi{
+    font-size: 35px;
+    color: black;
+    cursor: pointer;
+    transition: .2s;
+}
+nav i.bi-x{
+    font-size: 40px;
+}
+nav div.menu{
+    display: none;
+}
+nav div.menu div{
+    cursor: pointer;
+    margin-top: 30px;
+    padding-bottom: 2px;
+    font-size: 16px;
+    color: rgb(25, 29, 38, .9);
+    width: fit-content;
+}
+div.menuOpts:hover{
+    border-bottom: 1px solid black;
+}
+
+
+div.imgBackground-block{
+    position: relative;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+
+div.imgBackground-block:nth-of-type(1){
+    background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/safaliteymxa9/jojojojo.png");
+    background-size: cover;
+    background-position: 70%;
+    min-height: 50vh;
+    height: calc(40vw);
+}
+div.imgBackground-block:nth-of-type(3){
+    background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/safaliteymxa9/fotik.png");
+    background-position: 50%;
+    min-height: 50vh;
+    height: calc(40vw);
+}
+div.imgBackground-block:nth-of-type(6){
+    background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/safaliteymxa9/sauuuuuuu-mkEkN5Z3ajHppJ3j.jpg");
+    background-position: 55%;
+    min-height: 36vh;
+    height: calc(30vw);
+
+}
+div.block-layout{
+    position: absolute;
+    top: 45%;
+    transform: translate(0%, -50%);
+    left: 10%;
+    color: white;
+    width: 320px;
+}
+div.block-layout h1{
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+div.block-layout2{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: rgb(229, 228, 228);
+}
+div.block-layout2 p{
+    margin-top: 30px;
+    width: 414px;
+}
+button{
+    margin-top: 25px;
+    background-color: #054863;
+    padding: 15px 20px;
+    border:  none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .2s;
+}
+button:hover{
+    background-color: #096f97;
+    transform: scale(1.03);
+    transition: .1s;
+}
+div.background-block{
+    background-color: #EBF2FA;
+    padding-top: 50px;
+}
+div.background-block:nth-of-type(4){
+    background-color: #191D26;
+}
+div.layout{
+    margin: auto;
+    width: 60%;
+    text-align: left;
+    padding-bottom: 50px;
+    height: max-content;
+}
+div.layout p{
+    color: rgba(0, 0, 0, .6);
+}
+div.layout img{
+    
+    width: 100%;
+}
+div.layout2{
+    /* width: 80%; */
+    text-align: left;
+    font-size: 14px;
+    padding-bottom: 30px;
+    color: white;
+}
+@media screen and (max-width:1100px){
+    div.layout2{
+        width: 70%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+} 
+div.layout2 p{
+    margin: 10px 0px 30px 0px;   
+}
+div.layout3{
+    position: relative;
+    left: 15%;
+    width: 70%;
+    text-align: left;
+    padding-bottom: 30px;
+}
+div.layout3 p{
+    margin: 10px 0px 30px 0px;
+    color: rgb(25, 29, 38, .6);
+
+}
+div.layout3 h1{
+    margin-bottom: 30px;
+    font-weight: normal;
+    color: rgb(25, 29, 38);
+    font-size: 30px;
+}
+div.layout3 h3{
+    font-weight: normal;
+    color: rgb(25, 29, 38, .8);
+    font-size: 24px;
+    
+}
+div.block-layout3{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    color: white;
+    width: 304px;
+    font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+    div.layout{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    div.layout div.text{
+        width: 50%;
+        
+    }
+    div.layout div{
+        width: 45%;
+        max-width: 413px;
+    }
+}
+@media screen and (min-width: 1100px) {
+    div.layout2{
+        padding: 0px 30px;
+        display: flex;
+        justify-content: space-around;
+        height: 400px;
+        align-items: center;
+        
+    }
+    div.layout2 div{
+        display: block;
+        width: 280px;
+        font-size: 16px;
+    }
+    div.layout2 div p, div.layout2 div h1 {
+        width: 170px;
+    }
+
+    
+}
+@media screen and (min-width: 992px){
+    div.layout div.text{
+        font-size: 1.1em;
+    }
+}
+@media screen and (min-width: 1200px) {
+    div.layout{
+        width: 80%;
+        font-size: 1.2em;
+    }
+}
+
+
