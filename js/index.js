@@ -1,7 +1,9 @@
 $('div.layout p:first').css('margin', '40px 0px')
 $('div.layout p:last').css('margin-top', '30px').css('margin-bottom', '20px')
 
-$('.selected').css('border-bottom', '1px solid rgba(25, 29, 38, .9)')
+$(window).on('load', function(){
+    $('.selected').css('border-bottom', '1px solid rgba(25, 29, 38, .9)')
+})
 
 $('.bi').on('click', function(){
     $('.menu').slideToggle({start: function(){
