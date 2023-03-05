@@ -1,16 +1,7 @@
 $('div.layout p:first').css('margin', '40px 0px')
 $('div.layout p:last').css('margin-top', '30px').css('margin-bottom', '20px')
 
-$(window).on('load',function(){
-    const currentPathName = $(location).prop('pathname')
-    if( currentPathName == '/my_first_web-store/index.html' ) {
-        $('#homeOpt').removeClass('hover').css('border-bottom', '1px solid rgba(25, 29, 38, .9')
-    }else if ( currentPathName == '/my first web-store/shop.html' ) {
-        $('#shopOpt').removeClass('hover').css('border-bottom', '1px solid rgba(25, 29, 38, .9')
-    }else if ( currentPathName == '/my_first_web-store/about.html' ) {
-        $('#aboutOpt').removeClass('hover').css('border-botom', '1px solid rgba(25, 29, 38, .9)')
-    }
-})
+$('.selected').css('border-bottom', '1px solid rgba(25, 29, 38, .9)')
 
 $('.bi').on('click', function(){
     $('.menu').slideToggle({start: function(){
