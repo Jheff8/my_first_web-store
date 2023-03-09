@@ -57,19 +57,34 @@ div.imgBackground-block:nth-of-type(1){
     background-size: cover;
     background-position: 70%;
     min-height: 50vh;
-    height: calc(40vw);
+    
 }
 div.imgBackground-block:nth-of-type(3){
     background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/safaliteymxa9/fotik.png");
     background-position: 50%;
     min-height: 50vh;
-    height: calc(40vw);
+    
 }
 div.imgBackground-block:nth-of-type(6){
     background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/safaliteymxa9/sauuuuuuu-mkEkN5Z3ajHppJ3j.jpg");
     background-position: 55%;
     min-height: 36vh;
-    height: calc(80vw);
+    
+}
+@media (max-height: 450px){
+    div.imgBackground-block:nth-of-type(1){
+        height: calc(75vw);
+    }
+}
+@media (max-height: 540px ) {
+    div.imgBackground-block:nth-of-type(6){
+        height: calc(70vw);
+    }
+}
+@media (max-height: 380px ){
+    div.imgBackground-block:nth-of-type(3){
+        height: calc(85vw);
+    }
 }
 div.block-layout{
     position: absolute;
@@ -97,10 +112,11 @@ div.block-layout2 p{
     margin-top: 20px;
     max-width: 90%;
 }
+
 @media (max-width: 500px) and (max-height:560px) {
     div.block-layout2{
         position: relative;
-        top: 5%;
+        top: 15%;
     }
     div.block-layout2 p{
         margin-top: 10px;
