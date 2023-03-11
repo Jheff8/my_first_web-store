@@ -22,3 +22,10 @@ $(document).on('mouseenter', '.hover', function(){
 $(document).on('mouseleave', '.hover', function(){
     $('.hover').css('border-bottom', 'none')
 })
+
+$('#telephone').on('click', function(event){
+    var text = $(this).text()
+    navigator.clipboard.writeText(text).then(function() {
+    alert('Copied text!')
+    })
+})
