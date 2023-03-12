@@ -29,3 +29,29 @@ $('#telephone').on('click', function(event){
     alert('Copied text!')
     })
 })
+
+$('#minus-btn').on('click', function(){
+    let value = $('.quantity-value').text()
+    if ( value >= 2 ){
+        --value
+        $('.quantity-value').text(value)
+    }
+})
+$('#plus-btn').on('click', function(){
+    let value = $('.quantity-value').text()
+    ++value
+    $('.quantity-value').text(value)
+})
+
+var timeoutId
+$('#add-bag').on('click', function(){
+    $('.warning-block').fadeIn().css('display', 'flex')
+    clearTimeout(timeoutId)
+    timeoutId = setTimeout(function(){
+        $('.warning-block').fadeOut()
+    }, 5000)
+})
+$('.close-warning').on('click', function(){
+    $('.warning-block').fadeOut()
+    clearTimeout(timeoutId)
+})

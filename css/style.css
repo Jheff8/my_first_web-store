@@ -116,7 +116,7 @@ div.block-layout2 p{
         margin-top: 15px;
     }
 }
-a.btn{
+.btn{
     background-color: #054863;
     padding: 15px 20px;
     margin-left: 15px;
@@ -130,9 +130,10 @@ a.btn{
     transition: .2s;
 }
 .btn:hover{
-    background-color: #096f97;
+    background-color: #095f81;
     transform: scale(1.03);
     transition: .1s;
+    color: white;
 }
 div.background-block{
     background-color: #EBF2FA;

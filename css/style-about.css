@@ -30,6 +30,9 @@
 footer{
     background-color: #054863;
 }
+footer h3{
+    font-size: 26px;
+}
 .social-media{
     display: flex;
     justify-content: space-between;

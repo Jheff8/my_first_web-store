@@ -23,7 +23,6 @@ header h1{
     header{
         width: 250px;
     }
-    
 }
 
 #img1{
@@ -75,8 +74,8 @@ header h1{
     cursor: pointer;
 }
 .product h2{font-size: 20px;}
-.product h3{
-    color: #979797;
+h3{
+    color: #797979;
     font-size: 16px;
 }
 .product:hover > .image-container{

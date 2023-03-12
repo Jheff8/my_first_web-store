@@ -1,0 +1,81 @@
+body{
+    overflow-x: hidden;
+}
+.product-img{
+    background-image: url('https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=392,h=392,fit=crop,q=100/cdn-ecommerce/store_01G0FTHP1QA7N17Y1TBRKEH7C2/assets/1649798645270-1424746861.png');
+    background-position: left 0% top 20%;
+    background-repeat: no-repeat;
+    height: 80vw;
+    max-height: 1140px;
+}
+.quantity-picker{
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 15px 0px;
+
+}
+.quantity-btn{
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    padding: 15px 18px;
+
+}
+#minus-btn{
+    font-size: 20px;
+}
+.quantity-value{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, .3); 
+    border-left: 1px solid rgba(0, 0, 0, .3);
+    padding: 15px 15px;
+}
+.btn{
+    display: block;
+    margin-left: 0;
+    width: 140px;
+}
+.warning-block{
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    position: fixed;
+    right: 5px;
+    top: 20%;
+    font-size: 16px;
+    background-color: #357DF9;
+    padding: 12px 6px;
+    border-radius: 5px ;
+}
+.warning-block span{
+    margin-left: 5px;
+}
+.close-warning{
+    border: none;
+    background: transparent;
+    padding: 0px 4px;
+    border-left: 1px solid white;
+    margin-left: 20px;
+    font-size: 24px;
+    padding-top: 5px;
+}
+footer{
+    background-color: #054863;
+}
+footer h3{
+    font-size: 26px;
+}
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 30%;
+    font-size: 22px;
+}
+#telephone{
+    cursor: pointer;
+}
+
