@@ -40,18 +40,23 @@ body{
 }
 .warning-block{
     display: none;
-    /* display: flex; */
     align-items: center;
     position: fixed;
     right: 5px;
     top: 20%;
     font-size: 16px;
     background-color: #357DF9;
-    padding: 12px 6px;
+    padding: 10px 6px;
     border-radius: 5px ;
 }
+.warning-block .bi-info-circle{
+    font-size: 18px;
+    padding-top: 3px;
+    padding-left: 3px;
+}
+
 .warning-block span{
-    margin-left: 5px;
+    margin-left: 8px;
 }
 .close-warning{
     border: none;
@@ -59,8 +64,8 @@ body{
     padding: 0px 4px;
     border-left: 1px solid white;
     margin-left: 20px;
-    font-size: 24px;
-    padding-top: 5px;
+    font-size: 26px;
+    padding-top: 3px;
 }
 footer{
     background-color: #054863;

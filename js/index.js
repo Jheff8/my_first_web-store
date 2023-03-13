@@ -5,9 +5,9 @@ $(window).on('load', function(){
     $('.selected').css('border-bottom', '2px solid rgba(25, 29, 38, .9)')
 })
 
-$('.bi').on('click', function(){
+$('.navBtn').on('click', function(){
     $('.menu').slideToggle({start: function(){
-    $('.bi').toggleClass('bi-list bi-x')
+    $('.navBtn').toggleClass('bi-list bi-x')
     }})
 })
 
@@ -43,7 +43,7 @@ $('#plus-btn').on('click', function(){
     $('.quantity-value').text(value)
 })
 
-var timeoutId
+let timeoutId
 $('#add-bag').on('click', function(){
     $('.warning-block').fadeIn().css('display', 'flex')
     clearTimeout(timeoutId)
