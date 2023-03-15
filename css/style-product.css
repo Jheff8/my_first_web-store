@@ -2,8 +2,6 @@ body{
     overflow-x: hidden;
 }
 .product-img{
-    background-image: url('https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=392,h=392,fit=crop,q=100/cdn-ecommerce/store_01G0FTHP1QA7N17Y1TBRKEH7C2/assets/1649798645270-1424746861.png');
-    background-position: left 0% top 20%;
     background-repeat: no-repeat;
     height: 80vw;
     max-height: 1140px;
