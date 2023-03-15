@@ -32,11 +32,11 @@
     <header>
         <h1>Shop online</h1>
         <p>Browse our selection of high-quality electronics with free, worldwide shipping.</p>
-    </header>
+    </header>    
     <div class="container-fluid mt-5 p-4">
         <div class="product-img center-image"></div>
-        <h2 class="product-name mt-3">12059 DigiCam</h2>
-        <h3 class="product-value mt-4">&#36;840.00</h3>
+        <h2 class="product-name mt-3"></h2>
+        <h3 class="product-value mt-4"></h3>
         <span class="quantity-picker">
             <button class="quantity-btn" id="minus-btn">&#45;</button>
             <span class="quantity-value">1</span>
@@ -66,7 +66,7 @@
         <div class="container text-light pb-5">
             <h3 class="pt-4 text-light">Customer Service:</h3>
             <p id="telephone" class="mb-4" title="Click to copy">(99) 9999-99999</p>
-            <p class="">Follow us on our social medias:</p>
+            <p>Follow us on our social medias:</p>
             <span class="social-media">
                 <a href="https://www.twitter.com" class="text-light" title="Go to Twitter page"><i class="bi bi-twitter"></i></a>
                 <a href="https://www.facebook.com" class="text-light" title="Go to Facebook page"><i class="bi bi-facebook"></i></a>
@@ -75,5 +75,12 @@
         </div>
     </footer>
     <script src="js/index.js"></script>
+    <script>
+         $(document).ready(function() {
+            $('.product-img').css('background-image', `url('${localStorage.getItem('product-img')}')`)
+            $('.product-name').text(localStorage.getItem('product-name'))
+            $('.product-value').html(`&#36;${localStorage.getItem('product-price')}`)
+        });
+    </script>
 </body>
 </html>
