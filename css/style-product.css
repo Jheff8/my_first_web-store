@@ -3,8 +3,12 @@ body{
 }
 .product-img{
     background-repeat: no-repeat;
-    height: 80vw;
-    max-height: 1140px;
+    height: 70vw;
+    width: 90vw;
+    max-height: 730px;
+    max-width: 950px;
+    background-size: cover;
+    margin: auto;
 }
 .quantity-picker{
     border: 1px solid rgba(0, 0, 0, .3);
